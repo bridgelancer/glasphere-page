@@ -224,8 +224,8 @@
       </section>
 
       <form method='post' id='email'>
-        <h5>Contact us </h5>
         {% csrf_token %}
+        <h5>Contact us </h5>
 
         <div class='form-group'>
           <label for='contact'> Your name</label>
@@ -272,7 +272,9 @@
     </section>
 
     <footer>
-      &#169 2019 Glasphere Ltd. All rights reserved
+      <div>
+        &#169 2019 Glasphere Ltd. All rights reserved
+      </div>
       <img class='logo' src='{% static 'frontend/logo.svg' %}' alt='logo'>
     </footer>
 
