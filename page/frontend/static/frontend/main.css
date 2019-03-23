@@ -24,7 +24,7 @@ body {
     max-width: 100vw;
     padding-left: 0;
     padding-right: 0;
-    align-content: space-evenly;
+    align-items: space-evenly;
 }
 
 .container > nav {
@@ -85,14 +85,6 @@ i {
     padding-left: 20%;
     padding-right: 20%;
     padding-top: 3em;
-}
-
-#team {
-    grid-area: m;
-    padding-top: 3em;
-    padding-bottom: 3em;
-    padding-left: 20%;
-    padding-right: 20%;
 }
 
 .container > #contact {
@@ -158,8 +150,8 @@ i {
 
 #about > #cards {
     grid-area : cards;
+    width: 100%;
     display: block;
-    justify-content: space-evenly;
 }
 
 #about p {
@@ -192,11 +184,6 @@ h6 {
     color: #eeeeee;
 }
 
-.card-group {
-    width: 100%
-    padding-bottom: 2em;
-}
-
 footer {
     padding-top: 2em;
     padding-bottom: 2em;
@@ -216,7 +203,7 @@ footer > i {
     max-width: 100vw;
     padding-left: 0;
     padding-right: 0;
-    align-content: space-evenly;
+    align-items: space-evenly;
 }
 
 #contact > .info {
@@ -352,38 +339,34 @@ nav .logo {
     left: 20%;
 }
 
-@media(min-width: 750px){
-    img {
-        max-width: 60%;
-        max-height: 60%;
-    }
 
-    .logo {
-        max-width: 232.3125px;
-        max-height: 56.25px;
-        margin-top: 5px;
-    }
-
-    .navbar-nav {
-        position: relative;
-        right: 26%;
-    }
-
-
-    .container > #intro {
-        padding: 14em;
-    }
-
-    footer .logo {
-        margin-top: 0;
-    }
-}
 
 footer .logo {
     margin-top: 2em;
     float: right;
 }
 
+#team {
+    grid-area: m;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    padding-left: 20%;
+    padding-right: 20%;
+
+    display: grid;
+    grid-auto-rows: minmax(50px, auto); grid-template-areas: " t-h " " t-cards "; /* for overriding bootstrap default max-width and padding*/
+    max-width: 100vw;
+}
+
+#team > .title {
+    grid-area : t-h
+}
+
+#team > #founder-cards {
+    grid-area : t-cards;
+    width: 100%;
+    display: block;
+}
 
 #founder-cards .card {
     color: #000121;
@@ -434,4 +417,69 @@ footer .logo {
 
 #founder-cards .card-body:hover hr {
     border-top: 2px solid #eeeeee;
+}
+
+@media(min-width: 750px){
+    img {
+        max-width: 60%;
+        max-height: 60%;
+    }
+
+    .logo {
+        max-width: 232.3125px;
+        max-height: 56.25px;
+        margin-top: 5px;
+    }
+
+    .navbar-nav {
+        position: relative;
+        right: 26%;
+    }
+
+
+    .container > #intro {
+        padding: 14em 20%;
+    }
+
+    footer .logo {
+        margin-top: 0;
+    }
+
+
+}
+
+@media(min-width: 950px){
+    #contact {
+    grid-template-areas:
+            ' i  f ';
+    align-items: center;
+    }
+}
+
+@media(min-width: 1250px){
+    #about > #cards {
+        grid-area : cards;
+        display: flex;
+        width: 750px;
+        justify-self: end;
+    }
+
+    #team > #founder-cards {
+        grid-area : t-cards;
+        display: flex;
+        width: 750px;
+        justify-self: end;
+
+}
+
+@media(min-width: 1550px){
+    #about {
+        grid-auto-rows: minmax(50px, auto); grid-template-areas: " h cards"; /* for overriding bootstrap default max-width and padding*/
+        align-items: center;
+    }
+
+    #team {
+        grid-auto-rows: minmax(50px, auto); grid-template-areas: " t-h t-cards"; /* for overriding bootstrap default max-width and padding*/
+        align-items: center;
+    }
 }
