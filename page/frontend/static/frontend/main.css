@@ -33,6 +33,7 @@ body {
     color: #eeeeee;
     padding-left: 20%;
     padding-right: 20%;
+    height: 100px;
 }
 
 .navbar-light .navbar-brand {
@@ -53,10 +54,10 @@ body {
     grid-area: i;
     background: #002742;
     color: #eeeeee;
-    padding-top: 7em;
+    padding-top: 14em;
     padding-left: 20%;
     padding-right: 20%;
-    padding-bottom: 7em;
+    padding-bottom: 14em;
 
 }
 
@@ -321,6 +322,16 @@ a:hover {
 img {
     max-width: 60%;
     max-height: 60%;
+}
+
+.logo {
+    max-width: 232.3125px;
+    max-height: 56.25px;
+    margin-top: 5px;
+}
+
+footer .logo {
+    float: right;
 }
 
 
