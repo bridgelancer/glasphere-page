@@ -1,18 +1,295 @@
 <!DOCTYPE html>
+{% load static %}
+
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
-  <title>Django DRF - React : Quickstart - Valentino G. - www.valentinog.com</title>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta name='author' content='Glasphere Limited'>
+
+  <!-- Bootstrap, CNS and fonts -->
+  <link rel='stylesheet dns-prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+  <link rel='stylesheet dns-prefetch' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
+  <link rel="stylesheet dns-prefetch" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- <link rel='stylesheet dns-prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css'> -->
+  <link rel='stylesheet' href='{% static 'frontend/main.css' %}'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+  <!-- SOCIAL -->
+  <meta itemprop='name' content='Home: Michael Choy'>
+  <meta itemprop='description' content='Glasphere company webpage'>
+  <!-- Open Graph General (Facebook & Pinterest) -->
+  <meta property='og:url' content='https://glasphere.tech'>
+  <meta property='og:title' content='Glasphere: Home Page'>
+  <meta property='og:description' content='Glasphere company webpage.'>
+  <meta property='og:site_name' content='Glasphere Company Website'>
+  <meta property='og:image' content=''>
+  <meta property='og:type' content='website'>
+  <meta property='og:locale' content='en_GB'>
+
+  <title>Glasphere</title>
 </head>
-<body>
-  <section class="section">
-    <div class="container">
-          <div id="app" class="columns"><!-- React --></div>
-    </div>
-  </section>
+
+<body class='grid'>
+
+  <div class='container'>
+
+    <nav class="navbar navbar-dark navbar-expand-sm navbar-light sticky-top" style="background-color: #000121;">
+      <a class="navbar-brand" href="#"><i>Glasphere Logo</i></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">ABOUT<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team">TEAM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Any additional React component could be added using react-dom -->
+    <section id='intro'>
+      <h1> We are a new, vibrant trading and technology company </h1>
+      <p>
+        Using state-of-the-art machine learning technology to capture
+        uncorrelated alpha in the local market.
+      </p>
+      <hr class='my-0'>
+
+      <a href='#about'> EXPLORE
+      <i class='fas fa-arrow-right'></i>
+      </a>
+    </section>
+
+
+    <section id='about'>
+        <section class='title'>
+          <h5> What we do </h5>
+        </section>
+
+        <section id='cards'>
+          <div class="card">
+            <div class="card-body">
+              <h6>
+                Risk-taking
+              </h6>
+
+              <p>
+                We provide competitive spreads, firm prices, and large sizes in
+                all market conditions.
+              </p>
+
+              <p>
+                Operating around the clock and around the globe, we trade a wide
+                range of instruments including spot, futures, swaps, options and
+                other listed products across 40 electronic exchanges...
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h6>
+                Research
+              </h6>
+
+              <p>
+                We provide competitive spreads, firm prices, and large sizes in
+                all market conditions.
+              </p>
+
+              <p>
+                Operating around the clock and around the globe, we trade a wide
+                range of instruments including spot, futures, swaps, options and
+                other listed products across 40 electronic exchanges...
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h6>
+                Infrastructure
+              </h6>
+
+              <p>
+                We provide competitive spreads, firm prices, and large sizes in
+                all market conditions.
+              </p>
+
+              <p>
+                Operating around the clock and around the globe, we trade a wide
+                range of instruments including spot, futures, swaps, options and
+                other listed products across 40 electronic exchanges...
+              </p>
+            </div>
+          </div>
+        </section>
+    </section>
+
+
+    <section id='team'>
+        <hr>
+        <section class='title'>
+          <h5> Founders </h5>
+        </section>
+
+        <section id='founder-cards'>
+          <div class="card">
+            <div class="card-body">
+              <hr>
+              <h6>
+                Alan Chan
+              </h6>
+
+              <ul>
+                <li>a </li>
+                <li>b </li>
+                <li>c </li>
+              </ul>
+
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <hr>
+              <h6>
+                Michael Choy
+              </h6>
+
+              <ul>
+                <li>a </li>
+                <li>b </li>
+                <li>c </li>
+              </ul>
+
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <hr>
+              <h6>
+                Simon Yeung
+              </h6>
+
+              <ul>
+                <li>a </li>
+                <li>b </li>
+                <li>c </li>
+              </ul>
+
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <hr>
+              <h6>
+                Nicholas Yung
+              </h6>
+
+              <ul>
+                <li>a </li>
+                <li>b </li>
+                <li>c </li>
+              </ul>
+
+            </div>
+          </div>
+        </section>
+
+        </section>
+    </section>
+
+    <!-- Form -->
+    <section id='contact'>
+
+      <section class='info'>
+        <div>
+          <h5><label>Email</label></h5>
+            <a href='mailto:enquires@glasphere.tech'> enquires@glasphere.tech </a>
+        </div>
+
+        <div class='icons'>
+          <h5><label>Social</label></h5>
+            <a href='https://www.linkedin.com/in/michael-choy-88aab5137/' target='_blank'>
+              <img src='{% static 'frontend/linkedin.png' %}' alt=''>
+            </a>
+
+        </div>
+      </section>
+
+      <form method='post' id='email'>
+        <h5>Contact us </h5>
+        {% csrf_token %}
+
+        <div class='form-group'>
+          <label for='contact'> Your name</label>
+          <input placeholder='Greetings'
+                 name='form-name'
+                 id='email'
+                 required>
+        </div>
+
+        <div class='form-group'>
+          <label for='contact'> Your email address </label>
+          <input type='email'
+                 name='form-contact'
+                 id='email'
+                 placeholder='Enter your email'
+                 required>
+        </div>
+
+        <div class='form-group'>
+          <label for='message'> Your message </label>
+          <textarea rows='5'
+                    name='form-message'
+                    id='form-message'
+                    placeholder='Free feel to drop any words here!'
+                    form='email'
+                    required > </textarea>
+        </div>
+
+        <div class='buttons'>
+          <div>
+            <button type="submit"
+                    class="btn btn-outline-primary"> Submit </button>
+          </div>
+          <div>
+            <button
+                    id='reset_button'
+                    type="reset"
+                    class="btn btn-outline-secondary"> Reset </button>
+          </div>
+        </div>
+
+      </form>
+
+    </section>
+
+    <footer>
+      &#169 2019 Glasphere Ltd. All rights reserved
+      <i>Glasphere Logo</i>
+    </footer>
+
+  </div>
+
 </body>
-{% load static %}
-<script src="{% static "frontend/main.js" %}"></script>
+<!-- Any react element
+
+    <section id='app' class='columns'>
+    </section>
+
+-->
+
+
+<script src='{% static 'frontend/main.js' %}'></script>
+<!-- JS needed for Bootstrap library -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </html>
