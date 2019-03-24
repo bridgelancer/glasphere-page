@@ -29,15 +29,19 @@
   <title>Glasphere</title>
 </head>
 
-<body class='grid'>
+<body>
 
+  <!-- Main CSS grid layout -->
   <div class='container'>
 
-    <nav class="navbar navbar-dark navbar-expand-md navbar-light sticky-top" style="background-color: #000121;">
-      <img class='logo' src='{% static 'frontend/logo.svg' %}' alt='logo'>
+    <!-- Collapsable w/ dropdown bootstrap navbar -->
+    <nav class="navbar navbar-dark navbar-expand-md sticky-top" style="background-color: #000121;">
+      <img class='logo' src='{% static 'frontend/logo.svg' %}' alt='company logo'>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Collapsed toggler -->
         <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- Collapsable dropdown bar -->
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
@@ -52,7 +56,8 @@
         </ul>
       </div>
     </nav>
-    <!-- Any additional React component could be added using react-dom -->
+
+    <!-- Main banner -->
     <section id='intro'>
       <h1> We are a new, vibrant trading and technology company </h1>
       <p>
@@ -67,6 +72,7 @@
     </section>
 
 
+    <!-- Responisve cards telling what we do, CSS grid container -->
     <section id='about'>
         <section class='title'>
           <h5> What we do </h5>
@@ -133,6 +139,7 @@
     </section>
 
 
+    <!-- Responisve cards telling who we are, CSS grid container -->
     <section id='team'>
         <hr>
         <section class='title'>
@@ -205,7 +212,7 @@
         </section>
     </section>
 
-    <!-- Form -->
+    <!-- Contact section - email info, contact and form -->
     <section id='contact'>
 
       <section class='info'>
@@ -223,6 +230,7 @@
         </div>
       </section>
 
+      <!-- Form for contacting us -->
       <form method='post' id='email'>
         {% csrf_token %}
         <h5>Contact us </h5>
@@ -271,11 +279,12 @@
 
     </section>
 
+    <!-- Webiste footer and logo -->
     <footer>
       <div>
         &#169 2019 Glasphere Ltd. All rights reserved
       </div>
-      <img class='logo' src='{% static 'frontend/logo.svg' %}' alt='logo'>
+      <img class='logo' src='{% static 'frontend/logo.svg' %}' alt='company logo'>
     </footer>
 
   </div>
