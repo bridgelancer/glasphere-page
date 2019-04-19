@@ -17,6 +17,19 @@ body {
     margin-top: 5px;
 }
 
+h3 {
+    font-size: 2.4em;
+}
+
+h5 {
+    font-size: 1.8em;
+}
+
+h6 {
+    font-size: 1.6em;
+}
+
+
 .container {
     display: grid;
     grid-template-areas:
@@ -97,7 +110,6 @@ i {
 
 /* Note: a lot of styling has been accomplished by default bootstrap class. Please
 /* consult the documentation of bootstrap navbar when in doubt */
-/* Bootstrap navbar CSS styling */
 
 /* Override bootstrap default */
 nav .logo {
@@ -105,11 +117,10 @@ nav .logo {
     left: 20%;
 }
 
-
+/* Bootstrap navbar CSS styling */
 .navbar {
     padding: 0;
 }
-
 
 .navbar-dark .navbar-nav .nav-link {
     background: #000121;
@@ -143,7 +154,6 @@ nav .logo {
 
 #intro > div h3 {
     color: #eeeeee;
-    font-size: 2.3em;
     margin-bottom: 1em;
 }
 
@@ -206,18 +216,6 @@ nav .logo {
     padding-top: 0.5em;
 }
 
-h3 {
-    font-size: 2.4em;
-}
-
-h5 {
-    font-size: 1.8em;
-}
-
-h6 {
-    font-size: 1.6em;
-}
-
 .info h5 {
     color: #eeeeee;
 
@@ -244,8 +242,8 @@ h6 {
     border-radius: 0.5em;
 
     margin-right: 0.5em;
-    padding-top: 1em;
     margin-bottom: 2em;
+    padding-top: 1em;
 
     background: #eeeeee;
     color: #eeeeee;
@@ -313,12 +311,6 @@ a:hover {
     padding-bottom: 2em;
 }
 
-form label {
-    padding: 0.3em 0;
-
-    font-size: 1.2em;
-}
-
 form input {
     display: block;
     border-radius: 0.5rem;
@@ -359,7 +351,7 @@ form textarea:hover{
     background-color: #353535;
     color: #eeeeee;
     border: #353535;
-    border-radius: 0.7rem;
+    border-radius: 0.5rem;
     font-size: 1em;
 
 }
@@ -368,7 +360,7 @@ form textarea:hover{
     background-color: #eeeeee;
     color: #353535;
     border: #eeeeee;
-    border-radius: 0.7rem;
+    border-radius: 0.5rem;
     font-size: 1em;
 }
 
@@ -391,7 +383,6 @@ button {
     font-size: 18px;
 }
 
-
 footer {
     padding-top: 2em;
     padding-bottom: 2em;
@@ -399,6 +390,13 @@ footer {
 
 footer div {
     float: right;
+}
+
+/* Each block applies progressively in addition to the previous rules */
+@media(min-height: 650px) {
+  #intro {
+    height: calc(100vh - 80px);
+  }
 }
 
 /* Responsiveness settings - always starts with smallest min width */
@@ -422,14 +420,6 @@ footer div {
         margin-top: 0;
     }
 }
-
-/* Each block applies progressively in addition to the previous rules */
-@media(min-height: 650px) {
-  #intro {
-    height: calc(100vh - 80px);
-  }
-}
-
 
 @media(min-width: 950px){
     #contact {
