@@ -13,8 +13,8 @@ body {
 }
 
 .logo {
-    max-width: 103.25px;
-    max-height: 25px;
+    max-width: 206.5px;
+    max-height: 50px;
     margin-top: 5px;
 }
 
@@ -25,9 +25,8 @@ body {
             " n " /* for nav bar */
             " i " /* for banner */
             " a " /* for intro */
-            " m " /* for team */
             " c " /* for contact */
-            " f "; /* for fotter */
+            " f "; /* for footer */
 
     /* for overriding bootstrap default max-width and padding */
     max-width: 100vw;
@@ -38,7 +37,7 @@ body {
 /* Assignemnt of the grid-area of main grid and settings */
 .container > nav {
     grid-area: n;
-    height: 100px;
+    height: 80px;
 
     background: #000121;
     color: #eeeeee;
@@ -46,7 +45,11 @@ body {
 
 .container > #intro {
     grid-area: i;
-    padding: 4em 20%;
+    padding: 20% 20%;
+
+    display: grid;
+    grid-template-areas:
+      " div ";
 
     background: #002742;
     color: #eeeeee;
@@ -57,15 +60,11 @@ body {
     padding: 3em 20% 0 20%;
 
     display: grid;
-    grid-auto-rows: minmax(50px, auto); grid-template-areas: " h " " cards "; /* for overriding bootstrap default max-width and padding*/
-}
-
-.container > #team {
-    grid-area: m;
-    padding: 3em 20%;
-
-    display: grid;
-    grid-auto-rows: minmax(50px, auto); grid-template-areas: " t-h " " t-cards "; /* for overriding bootstrap default max-width and padding*/
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-areas:
+    " h "
+    " summary "
+    " cards "; /* for overriding bootstrap default max-width and padding*/
 }
 
 .container > #contact {
@@ -86,8 +85,7 @@ body {
     grid-area: f;
     background: #000121;
     color: #eeeeee;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding: 0 20%;
 }
 
 /* Make i tag display normal font style by default */
@@ -135,33 +133,31 @@ nav .logo {
 }
 
 /* Banner font and spacing */
-#intro > h1 {
+#intro > div {
+    grid-area: div;
+
+    align-self: center;
+    justify-self: center;
+}
+
+#intro > div h3 {
     color: #eeeeee;
     font-size: 2.3em;
     margin-bottom: 1em;
 }
 
-#intro > p {
+#intro > div p {
     letter-spacing: 1.5px;
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 28px;
     font-weight: 300;
 
     color: #b1b1b1;
 
-    margin-bottom: 4em;
+    margin-bottom: 2em;
 }
 
-#intro > .my-0 {
-   border-top: 0.5px solid #a0a0a0;
-   padding-bottom: 1em;
-   margin-left: 0;
-
-   width: 30%;
-   min-width: 100px;
-}
-
-#intro > a , #intro > a:hover{
+#intro > div a , #intro > div a:hover{
     color: #878787;
     font-size: 0.8em;
     letter-spacing: 3px;
@@ -170,7 +166,13 @@ nav .logo {
 
 /* About Section grid are assignment */
 #about > .title {
-    grid-area : h
+    grid-area : h;
+    height: 100px;
+}
+
+#about > .summary {
+    grid-area: summary;
+    padding-bottom: 1em;
 }
 
 /* For mobile: default settings of cards are 100% of the whole vp */
@@ -178,104 +180,77 @@ nav .logo {
     grid-area : cards;
     width: 100%;
     display: block;
+
+    padding-bottom: 2em;
 }
 
 /* About section settings */
-#about p {
-    color: #a0a0a0;
-    letter-spacing: 0.5px;
+.card-body p {
+    color: #000121;
+    font-size: 1.1em;
+
+    text-align: justify;
 }
 
 .title {
     padding-top: 1em;
     padding-bottom: 1em;
+    color: #333333;
+}
+
+.title h3{
+    text-align: center;
+    padding-top: 0.5em;
+}
+
+h3 {
+    font-size: 2.4em;
+}
+
+h5 {
+    font-size: 1.8em;
 }
 
 h6 {
-    font-size: 1.8em;
-    color: #000121;
+    font-size: 1.6em;
 }
 
 .info h5 {
+    color: #eeeeee;
+
     padding-bottom: 1em;
 }
 
-/* Mobile: 100% of the vp */
+.summary h5 {
+    color: #333333;
+    font-size: 1.5em;
+
+    text-align: justify;
+    text-align-last: center;
+
+    padding-bottom: 1em;
+}
+
+/* Mobile: 100% width of the vp */
+
+
 .card {
     width: 100%;
+    border-color: #000121;
+    border-width: 2px;
     border-radius: 0.5em;
 
     margin-right: 0.5em;
-    padding-top: 2em;
+    padding-top: 1em;
     margin-bottom: 2em;
 
-    background: #000121;
+    background: #eeeeee;
     color: #eeeeee;
 }
 
 .card-body > h6 {
-    color: #eeeeee;
-}
-
-#team > .title {
-    grid-area : t-h
-}
-
-#team > #founder-cards {
-    grid-area : t-cards;
-    width: 100%;
-    display: block;
-}
-
-#founder-cards .card {
     color: #000121;
-    background: #eeeeee;
-    border-color: #000121;
-    padding-top: 0;
-}
-
-#founder-cards .card:hover {
-    color: #eeeeee;
-    background: #002742;
-}
-
-#founder-cards .card-body > h6 {
-    font-size: 1em;
-    color: #000121;
-}
-
-#founder-cards .card-body:hover > h6 {
-    color: #eeeeee;
-}
-
-#founder-cards .card-body ul {
-    padding-left: 1rem;
-}
-
-#founder-cards .card-body li {
-    position: relative;
-    font-size: 14px;
-    color: #4f4f4f;
-    padding-left: 5px;
-    line-height: 1.15rem;
-    letter-spacing: 2px;
-    font-weight: 300;
-    margin-bottom: 10px;
-}
-
-#founder-cards .card-body:hover li {
-    color: #eeeeee;
-}
-
-#founder-cards hr {
-   border-top: 2px solid #000121;
-   width: 10%;
-   min-width: 60px;
-   margin-left: 0;
-}
-
-#founder-cards .card-body:hover hr {
-    border-top: 2px solid #eeeeee;
+    padding-bottom: 0.5em;
 }
 
 /* Contact grid area assignment */
@@ -414,29 +389,20 @@ button {
 }
 
 
-/* Footer */
-footer .logo {
-    margin-top: 2em;
-    float: right;
-}
-
-
 footer {
     padding-top: 2em;
     padding-bottom: 2em;
 }
 
+footer div {
+    float: right;
+}
+
 /* Responsiveness settings - always starts with smallest min width */
-@media(min-width: 750px){
+@media(min-width: 768px){ /* 768px necessary for aligning with bootstrap */
     img {
         max-width: 60%;
         max-height: 60%;
-    }
-
-    .logo {
-        max-width: 232.3125px;
-        max-height: 56.25px;
-        margin-top: 5px;
     }
 
     .navbar-nav {
@@ -455,6 +421,13 @@ footer {
 }
 
 /* Each block applies progressively in addition to the previous rules */
+@media(min-height: 650px) {
+  .container > #intro {
+    height: calc(100vh - 80px);
+  }
+}
+
+
 @media(min-width: 950px){
     .container > #contact {
     grid-template-areas: ' i  f ';
@@ -467,29 +440,14 @@ footer {
     /* changing layout of cards - flex box align to the right */
     .container > #about > #cards {
         display: flex;
-        width: 750px;
-        justify-self: end;
+        width: calc((100vw- 75px) /3);
+        justify-self: center;
     }
-
-    .container > #team > #founder-cards {
-        display: flex;
-        width: 750px;
-        justify-self: end;
 }
 
 /* Each block applies progressively in addition to the previous rules */
 @media(min-width: 1550px){
     /* changing layout of grid - make title aligned to center adajacent to cards */
-    .container > #about {
-        grid-auto-rows: minmax(50px, auto); grid-template-areas: " h cards";
-        align-items: center;
-    }
-
-    .container > #team {
-        grid-auto-rows: minmax(50px, auto); grid-template-areas: " t-h t-cards";
-        align-items: center;
-    }
-
     .title {
         padding: 0;
     }

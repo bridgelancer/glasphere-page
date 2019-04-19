@@ -11,6 +11,7 @@
   <link rel='stylesheet dns-prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
   <link rel='stylesheet dns-prefetch' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
   <link rel="stylesheet dns-prefetch" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel='shortcut icon' href='{% static 'frontend/logo_thumbnail.svg' %}'>
   <!-- <link rel='stylesheet dns-prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css'> -->
   <link rel='stylesheet' href='{% static 'frontend/main.css' %}'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
@@ -48,9 +49,6 @@
             <a class="nav-link" href="#about"> <i>ABOUT</i><span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#team"><i>TEAM</i></a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#contact"><i>CONTACT</i></a>
           </li>
         </ul>
@@ -59,42 +57,59 @@
 
     <!-- Main banner -->
     <section id='intro'>
-      <h1> We are a new, vibrant trading and technology company </h1>
-      <p>
-        Using state-of-the-art machine learning technology to capture
-        uncorrelated alpha in the local market.
-      </p>
-      <hr class='my-0'>
+    <div>
+        <h3>
+          A new &amp; vibrant data analytics company which opens <br>
+          to all sorts of possibilities
+        </h3>
+        <p>
+          Using state-of-the-art machine learning and cutting-edge big data analytics
+          techniques to seek hidden insights.
+        </p>
 
-      <a href='#about'> EXPLORE
-      <i class='fas fa-arrow-right'></i>
+      <a href='#about'>
+        <button type="button" class="btn btn-outline-info" href='#about' >EXPLORE</button>
       </a>
+    </div>
     </section>
 
 
     <!-- Responisve cards telling what we do, CSS grid container -->
     <section id='about'>
         <section class='title'>
-          <h5> What we do </h5>
+          <h3> What we do </h3>
+        </section>
+
+        <section class='summary'>
+          <h5>
+            As a data analytics company, we handle a wide range of data of
+            different context. We discover clusters, categorize
+            classifications and reveal insights through our analytics process.
+          </h5>
         </section>
 
         <section id='cards'>
           <div class="card">
             <div class="card-body">
               <h6>
-                Risk-taking
+                Trading
               </h6>
 
               <p>
-                We provide competitive spreads, firm prices, and large sizes in
-                all market conditions.
+                With the combination of machine learning and technical
+                analysis, we aim to identify existing hidden patterns and
+                correlations in the financial market.  Leveraging on our
+                in-house developed computer systems, we allow our quantitative
+                strategies and algorithms to be executed seamlessly around the
+                clock.
               </p>
 
               <p>
-                Operating around the clock and around the globe, we trade a wide
-                range of instruments including spot, futures, swaps, options and
-                other listed products across 40 electronic exchanges...
+                We have strategies covering different financial instruments,
+                from stocks, futures to emerging assets, providing risk
+                diversification in all market conditions.
               </p>
+
             </div>
           </div>
 
@@ -105,14 +120,16 @@
               </h6>
 
               <p>
-                We provide competitive spreads, firm prices, and large sizes in
-                all market conditions.
+                Being a data analytics firm, we constantly polish and enhance
+                our current predictive models and machine learning models.
+                Actively participating in different users/ developers group, we
+                share our insights with the broader data analytics community,
+                supporting the growth of big data analysis in Hong Kong.
               </p>
 
               <p>
-                Operating around the clock and around the globe, we trade a wide
-                range of instruments including spot, futures, swaps, options and
-                other listed products across 40 electronic exchanges...
+                We also participate in the education of data analytics and machine learning,
+                hosting seminars and workshops for university students and hobbyist.
               </p>
             </div>
           </div>
@@ -120,95 +137,19 @@
           <div class="card">
             <div class="card-body">
               <h6>
-                Infrastructure
+                Advisory
               </h6>
 
               <p>
-                We provide competitive spreads, firm prices, and large sizes in
-                all market conditions.
-              </p>
-
-              <p>
-                Operating around the clock and around the globe, we trade a wide
-                range of instruments including spot, futures, swaps, options and
-                other listed products across 40 electronic exchanges...
+                With experience on handling projects from different industries
+                and context, we excels in analysing quantitative information
+                for our clients and eventually finding solutions for them.
+                Through data and analytics, our talent can provide valuable
+                insights for start-ups and other companies from cost reduction,
+                product enhancement to redefine target groups.
               </p>
             </div>
           </div>
-        </section>
-    </section>
-
-
-    <!-- Responisve cards telling who we are, CSS grid container -->
-    <section id='team'>
-        <hr>
-        <section class='title'>
-          <h5> Founders </h5>
-        </section>
-
-        <section id='founder-cards'>
-          <div class="card">
-            <div class="card-body">
-              <hr>
-              <h6>
-                Alan Chan
-              </h6>
-
-              <ul>
-                <li>a </li>
-                <li>b </li>
-                <li>c </li>
-              </ul>
-
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <hr>
-              <h6>
-                Michael Choy
-              </h6>
-
-              <ul>
-                <li>a </li>
-                <li>b </li>
-                <li>c </li>
-              </ul>
-
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <hr>
-              <h6>
-                Simon Yeung
-              </h6>
-
-              <ul>
-                <li>a </li>
-                <li>b </li>
-                <li>c </li>
-              </ul>
-
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <hr>
-              <h6>
-                Nicholas Yung
-              </h6>
-
-              <ul>
-                <li>a </li>
-                <li>b </li>
-                <li>c </li>
-              </ul>
-
-            </div>
-          </div>
-        </section>
-
         </section>
     </section>
 
@@ -217,12 +158,12 @@
 
       <section class='info'>
         <div>
-          <h5><label>Email</label></h5>
+          <h6><label>Email</label></h6>
             <a href='mailto:enquires@glasphere.tech'> enquires@glasphere.tech </a>
         </div>
 
         <div class='icons'>
-          <h5><label>Social</label></h5>
+          <h6><label>Social</label></h6>
             <a href='https://www.linkedin.com/in/michael-choy-88aab5137/' target='_blank'>
               <img src='{% static 'frontend/linkedin.png' %}' alt=''>
             </a>
@@ -233,32 +174,28 @@
       <!-- Form for contacting us -->
       <form method='post' id='email'>
         {% csrf_token %}
-        <h5>Contact us </h5>
+        <h6>Contact us </h6>
 
         <div class='form-group'>
-          <label for='contact'> Your name</label>
-          <input placeholder='Greetings'
+          <input placeholder='Your name'
                  name='form-name'
                  id='email'
                  required>
         </div>
 
         <div class='form-group'>
-          <label for='contact'> Your email address </label>
           <input type='email'
                  name='form-contact'
                  id='email'
-                 placeholder='Enter your email'
+                 placeholder='Your email address'
                  required>
         </div>
 
         <div class='form-group'>
-          <label for='message'> Your message </label>
           <textarea rows='5'
                     name='form-message'
                     id='form-message'
                     placeholder='Free feel to drop any words here!'
-                    form='email'
                     required > </textarea>
         </div>
 
@@ -284,7 +221,6 @@
       <div>
         &#169 2019 Glasphere Ltd. All rights reserved
       </div>
-      <img class='logo' src='{% static 'frontend/logo.svg' %}' alt='company logo'>
     </footer>
 
   </div>
