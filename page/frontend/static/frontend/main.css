@@ -17,6 +17,30 @@ body {
     margin-top: 5px;
 }
 
+.circle-icon {
+    text-align: center;
+}
+
+.circle-icon img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #eeeeee;
+
+    border-color: #000121;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.title-bar {
+    margin: 1em 0;
+    border-color: #000121;
+    border-style: solid;
+    border-width: 1px;
+    color: #000121;
+    text-align: center;
+}
+
 h3 {
     font-size: 2.4em;
 }
