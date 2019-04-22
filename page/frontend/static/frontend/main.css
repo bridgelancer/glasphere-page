@@ -82,7 +82,7 @@ nav {
 
 #intro {
     grid-area: i;
-    padding: 20% 20%;
+    padding: 20% 10%;
 
     display: grid;
     grid-template-areas:
@@ -94,7 +94,7 @@ nav {
 
 #about {
     grid-area: a;
-    padding: 3em 20% 0 20%;
+    padding: 3em 10% 0 10%;
 
     background: #eeeeee;
 
@@ -108,7 +108,7 @@ nav {
 
 #contact {
     grid-area: c;
-    padding: 2em 20%;
+    padding: 2em 10%;
 
     background: #000121;
     color: #eeeeee;
@@ -124,7 +124,7 @@ footer {
     grid-area: f;
     background: #000121;
     color: #eeeeee;
-    padding: 0 20%;
+    padding: 0 10%;
 }
 
 /* Make i tag display normal font style by default */
@@ -138,7 +138,7 @@ i {
 /* Override bootstrap default */
 nav .logo {
     position: relative;
-    left: 20%;
+    left: 10%;
 }
 
 /* Bootstrap navbar CSS styling */
@@ -156,17 +156,17 @@ nav .logo {
 /* Making display of dropdown text align to grid/logo */
 .navbar-toggler {
     position: relative;
-    right: 20%;
+    right: 10%;
 }
 
 #navbarNavDropdown.navbar-collapse.collapse.show i {
     position: relative;
-    left: 20%
+    left: 10%
 }
 
 #navbarNavDropdown.navbar-collapse.collapsing i {
     position: relative;
-    left: 20%
+    left: 10%
 }
 
 /* Banner font and spacing */
@@ -425,6 +425,38 @@ footer div {
 
 /* Responsiveness settings - always starts with smallest min width */
 @media(min-width: 768px){ /* 768px necessary for aligning with bootstrap */
+    #intro {
+        padding: 20% 20%;
+    }
+
+    #about {
+        padding: 3em 20% 0 20%;
+    }
+
+    #contact {
+        padding: 2em 20%;
+    }
+
+    footer {
+        padding: 0 20%;
+    }
+
+    nav .logo {
+        left: 20%;
+    }
+
+    .navbar-toggler {
+        right: 20%;
+    }
+
+    #navbarNavDropdown.navbar-collapse.show i{
+        left: 20%;
+    }
+
+    #navbarNavDropdown.navbar-collapsing i{
+        left: 20%;
+    }
+
     img {
         max-width: 60%;
         max-height: 60%;
