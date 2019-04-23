@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 294.9 294.9">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4, .cls-5 {
+        fill: none;
+      }
+
+      .cls-2, .cls-4, .cls-5 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-width: 10px;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        stroke-width: 3px;
+      }
+
+      .cls-5 {
+        stroke-width: 5px;
+      }
+    </style>
+    <clipPath id="clip-path" transform="translate(-2.55 -2.55)">
+      <circle class="cls-1" cx="149.75" cy="150" r="127.5"/>
+    </clipPath>
+  </defs>
+  <title>research icon</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <circle class="cls-2" cx="147.45" cy="147.45" r="142.45"/>
+  </g>
+  <g id="Layer_1" data-name="Layer 1">
+    <g class="cls-3">
+      <g>
+        <circle class="cls-4" cx="147.58" cy="147.45" r="23.63"/>
+        <g>
+          <path class="cls-5" d="M209.24,218.71c-22.91-6.43-50.64-18.33-79-34.71C67.18,147.59,24.85,102.86,35.69,84.08S106.44,79.6,169.5,116,274.88,197.14,264,215.92c-4.06,7-15,9.42-30.37,7.76" transform="translate(-2.55 -2.55)"/>
+          <circle class="cls-4" cx="221.47" cy="221.12" r="12.47" transform="translate(-83.32 299.81) rotate(-60)"/>
+        </g>
+        <g>
+          <path class="cls-5" d="M58.93,169.53c17.1-17.17,42.07-36,71.57-53.06,63.06-36.41,123-50.7,133.8-31.92s-31.49,63.51-94.54,99.92S46.8,235.16,36,216.38c-3.8-6.59-1.06-16.37,6.82-27.87" transform="translate(-2.55 -2.55)"/>
+          <circle class="cls-4" cx="51.17" cy="179.29" r="12.47" transform="translate(-85.34 47.05) rotate(-30)"/>
+        </g>
+        <path class="cls-5" d="M180.76,67.51c5.4,22.58,8.63,51.27,8.63,82.49,0,72.81-17.58,131.83-39.26,131.83s-39.26-59-39.26-131.83S128.45,18.17,150.14,18.17c8.69,0,16.72,9.49,23.23,25.54" transform="translate(-2.55 -2.55)"/>
+      </g>
+      <circle class="cls-4" cx="174.37" cy="53.1" r="12.47"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta name='author' content='Glasphere Limited'>
+
+  <!-- Bootstrap, CNS and fonts -->
+  <link rel='stylesheet dns-prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+  <link rel='stylesheet dns-prefetch' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
+  <link rel="stylesheet dns-prefetch" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel='shortcut icon' href='static/logo_thumbnail.svg'>
+  <!-- <link rel='stylesheet dns-prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css'> -->
+  <link rel='stylesheet' href='static/main.css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+  <!-- SOCIAL -->
+  <meta itemprop='name' content='Home: Michael Choy'>
+  <meta itemprop='description' content='Glasphere company webpage'>
+  <!-- Open Graph General (Facebook & Pinterest) -->
+  <meta property='og:url' content='https://glasphere.tech'>
+  <meta property='og:title' content='Glasphere: Home Page'>
+  <meta property='og:description' content='Glasphere company webpage.'>
+  <meta property='og:site_name' content='Glasphere Company Website'>
+  <meta property='og:image' content=''>
+  <meta property='og:type' content='website'>
+  <meta property='og:locale' content='en_GB'>
+
+  <title>Glasphere</title>
+</head>
+
+<body>
+
+  <!-- Main CSS grid layout -->
+  <div class='container'>
+
+    <!-- Collapsable w/ dropdown bootstrap navbar -->
+    <nav class="navbar navbar-dark navbar-expand-md sticky-top" style="background-color: #000121;">
+      <img class='logo' src='static/logo.svg' alt='company logo' href='#head'>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Collapsed toggler -->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Collapsable dropdown bar -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about"> <i>ABOUT</i><span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact"><i>CONTACT</i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main banner -->
+    <section id='intro'>
+    <div>
+        <h3>
+          A new &amp; vibrant data analytics company which opens <br>
+          to all sorts of possibilities
+        </h3>
+        <p>
+          Using state-of-the-art machine learning and cutting-edge big data analytics
+          techniques to seek hidden insights.
+        </p>
+
+      <a href='#about'>
+        <button type="button" class="btn btn-outline-info" href='#about' >EXPLORE</button>
+      </a>
+    </div>
+    </section>
+
+
+    <!-- Responisve cards telling what we do, CSS grid container -->
+    <section id='about'>
+        <section class='title'>
+          <h3> What we do </h3>
+        </section>
+
+        <section class='summary'>
+          <h5>
+            We handle a wide range of data of
+            different context. We discover clusters, categorize
+            classifications and reveal insights through our analytics process.
+          </h5>
+        </section>
+
+        <section id='cards'>
+          <div class="card">
+            <div class="card-body">
+
+              <div class='circle-icon'>
+                <img src='static/stock_icon.svg' alt=''>
+              </div>
+
+              <div class='title-bar'>
+                <h6>
+                  Trading
+                </h6>
+              </div>
+
+              <p>
+                With the combination of machine learning and technical
+                analysis, we aim to identify existing hidden patterns and
+                correlations in the financial market.  Leveraging on our
+                in-house developed computer systems, we allow our quantitative
+                strategies and algorithms to be executed seamlessly around the
+                clock.
+              </p>
+
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <div class='circle-icon'>
+                <img src='static/research_icon.svg' alt=''>
+              </div>
+
+              <div class='title-bar'>
+                <h6>
+                  Research
+                </h6>
+              </div>
+
+              <p>
+                We constantly polish and enhance our current predictive models
+                and machine learning models. Not only do we actively
+                participating in users and developers group, our commitment to
+                the community extends to opensourcing our systems and sharing
+                our insights with the students, hobbyists and data scientists.
+              </p>
+
+            </div>
+          </div>
+
+          <div class='card'>
+            <div class='card-body'>
+              <div class='circle-icon'>
+                <img src='static/advisory_icon.svg' alt=''>
+              </div>
+
+              <div class='title-bar'>
+                <h6>
+                  Advisory
+                </h6>
+              </div>
+
+              <p>
+                With the experience on handling projects from wide range of
+                industries and context, we excels in analysing quantitative
+                information for our clients. Through data and analytics, our talents could provide valuable
+                insights and actionable measures to cost reduction, addressing
+                buisness needs for start-ups and mature companies alike.
+              </p>
+            </div>
+          </div>
+        </section>
+    </section>
+
+    <!-- Contact section - email info, contact and form -->
+    <section id='contact'>
+
+      <section class='info'>
+        <div>
+          <h6><label>Email</label></h6>
+            <a href='mailto:enquires@glasphere.tech'> enquires@glasphere.tech </a>
+        </div>
+
+        <div class='icons'>
+          <h6><label>Social</label></h6>
+            <a href='https://www.linkedin.com/company/glasphere/about/' target='_blank'>
+              <img src='static/linkedin.png' alt=''>
+            </a>
+        </div>
+      </section>
+
+      <!-- Form for contacting us -->
+      <form
+        method='post'
+        id='email'
+        action='https://mailthis.to/michael.choy@glasphere.tech'>
+        <h6>Contact us </h6>
+
+        <div class='form-group'>
+          <input placeholder='Your name'
+                 name='form-name'
+                 id='email'
+                 required>
+        </div>
+
+        <div class='form-group'>
+          <input type='email'
+                 name='form-contact'
+                 id='email'
+                 placeholder='Your email address'
+                 required>
+        </div>
+
+        <div class='form-group'>
+          <textarea rows='5'
+                    name='form-message'
+                    id='form-message'
+                    placeholder='Free feel to drop any words here!'
+                    required > </textarea>
+        </div>
+
+        <div class='buttons'>
+          <div>
+            <button type="submit"
+                    class="btn btn-outline-primary"> Submit </button>
+          </div>
+          <div>
+            <button
+                    id='reset_button'
+                    type="reset"
+                    class="btn btn-outline-secondary"> Reset </button>
+          </div>
+        </div>
+      </form>
+
+    </section>
+
+    <!-- Webiste footer and logo -->
+    <footer>
+      <div>
+        &#169 2019 Glasphere Ltd. All rights reserved
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+
+<!-- Any react element
+
+    <section id='app' class='columns'>
+    </section>
+
+-->
+
+
+<!-- JS needed for Bootstrap library -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
