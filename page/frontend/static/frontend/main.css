@@ -12,6 +12,8 @@ body {
 }
 
 .logo {
+    width:206.5px;
+    height: 50px;
     max-width: 206.5px;
     max-height: 50px;
     margin-top: 5px;
@@ -76,7 +78,7 @@ nav {
 
 #intro {
     grid-area: i;
-    padding: 20% 10%;
+    padding: 20vw 10%;
 
     display: grid;
     grid-template-areas:
@@ -132,11 +134,6 @@ i {
 /* consult the documentation of bootstrap navbar when in doubt */
 
 /* Override bootstrap default */
-.logo {
-    position: relative;
-    left: 10%;
-}
-
 /* Bootstrap navbar CSS styling */
 .navbar {
     padding: 0;
@@ -152,17 +149,17 @@ i {
 /* Making display of dropdown text align to grid/logo */
 .navbar-toggler {
     position: relative;
-    right: 10%;
+    right: 10vw;
 }
 
 #navbarNavDropdown.navbar-collapse.collapse.show i {
     position: relative;
-    left: 10%
+    left: 10vw;
 }
 
 #navbarNavDropdown.navbar-collapse.collapsing i {
     position: relative;
-    left: 10%
+    left: 10vw;
 }
 
 /* Banner font and spacing */
@@ -302,6 +299,11 @@ i {
 }
 
 /* Social glyphicons */
+nav a.l-icon {
+    position: relative;
+    left: 10vw;
+}
+
 a {
     color: #878787;
 }
@@ -423,35 +425,35 @@ footer div {
 /* Responsiveness settings - always starts with smallest min width */
 @media(min-width: 768px){ /* 768px necessary for aligning with bootstrap */
     #intro {
-        padding: 20% 20%;
+        padding: 20vw 20vw
     }
 
     #about {
-        padding: 3em 20% 0 20%;
+        padding: 3em 20vw 0 20vw
     }
 
     #contact {
-        padding: 2em 20%;
+        padding: 2em 20vw
     }
 
     footer {
-        padding: 0 20%;
+        padding: 0 20vw
     }
 
-    .logo {
-        left: 20%;
+    nav a.l-icon {
+        left: 20vw;
     }
 
     .navbar-toggler {
-        right: 20%;
+        right: 20vw;
     }
 
     #navbarNavDropdown.navbar-collapse.show i{
-        left: 20%;
+        left: 20vw;
     }
 
     #navbarNavDropdown.navbar-collapsing i{
-        left: 20%;
+        left: 20vw;
     }
 
     img {
@@ -466,7 +468,7 @@ footer div {
 
 
     #intro {
-        padding: 14em 20%;
+        padding: 14em 20vw
     }
 }
 
