@@ -193,8 +193,10 @@
       </section>
 
       <!-- Form for contacting us -->
-      <form method='post' id='email'>
-        {% csrf_token %}
+      <form
+        method='post'
+        id='email'
+        action='https://mailthis.to/michael.choy@glasphere.tech'>
         <h6>Contact us </h6>
 
         <div class='form-group'>
