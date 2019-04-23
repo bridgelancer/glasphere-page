@@ -22,21 +22,15 @@ body {
 }
 
 .circle-icon img {
-    height: 50px;
-    width: 50px;
+    height: 120px;
+    width: 120px;
     border-radius: 50%;
     background: #eeeeee;
-
-    border-color: #000121;
-    border-style: solid;
-    border-width: 1px;
 }
 
 .title-bar {
     margin: 1em 0;
     border-color: #000121;
-    border-style: solid;
-    border-width: 1px;
     color: #000121;
     text-align: center;
 }
@@ -118,6 +112,7 @@ nav {
     grid-template-areas:
             ' i '
             ' f ';
+    align-items: start;
 }
 
 footer {
@@ -253,7 +248,7 @@ nav .logo {
     text-align: justify;
     text-align-last: center;
 
-    padding-bottom: 1em;
+    padding-bottom: 2em;
 }
 
 /* Mobile: 100% width of the vp */
@@ -261,16 +256,13 @@ nav .logo {
 
 .card {
     width: 100%;
-    border-color: #000121;
-    border-width: 2px;
-    border-radius: 0.5em;
+    border-color: #eeeeee;
 
     margin-right: 0.5em;
     margin-bottom: 2em;
     padding-top: 1em;
 
     background: #eeeeee;
-    color: #eeeeee;
 }
 
 .card-body > h6 {
@@ -283,6 +275,7 @@ nav .logo {
     grid-area: i;
     display: block;
 
+    padding-top: 2em;
     text-align: left;
 }
 
@@ -290,9 +283,9 @@ nav .logo {
     grid-area: f;
     display: block;
 
-    text-align:left;
-    justify-content: center;
     padding-top: 2em;
+    text-align: left;
+    justify-content: center;
 }
 
 #contact h5 {
@@ -480,7 +473,7 @@ footer div {
 @media(min-width: 950px){
     #contact {
     grid-template-areas: ' i  f ';
-    align-items: center;
+    align-items: start;
     }
 }
 
